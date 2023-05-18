@@ -24,8 +24,8 @@ app.use( "/UserScor" , userScorRouter ) ;
 const userPath_table = require('./Routes/Path_table');
 app.use( "/Score" , userPath_table ) ;
 
-db.sequelize.sync().then(()=> {
+
     app.listen(  process.env.PORT || 3009 ,  ()=>{
     console.log("/**************server running on port 3009*******************************************************************/");
   })
-} )
+
