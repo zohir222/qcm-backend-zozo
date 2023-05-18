@@ -4,12 +4,15 @@ require("dotenv").config();
 
 module.exports =  { 
   "development": {
-    "username": "root",
-    "password": "Zokokoyti1986",
+    "username": "zohir",
+    "password": "bensalem:1999",
     "database": "qcmproject",
-    "host": "localhost",
-    "dialect": "mysql"
-  } ,
+    "host": "zozodb.mysql.database.azure.com",
+    "dialect": "mysql" ,
+    "port" : "3306" ,
+
+  } 
+  ,
   "test": {
     "username": "root",
     "password": null,
@@ -17,13 +20,5 @@ module.exports =  {
     "host": "127.0.0.1",
     "dialect": "mysql"
   } ,
-  "production": {
-    "username": "zozo",
-    "password": "bensalem:1999",
-    "database": "qcmproject",
-    "host": "mydemoserver-bz.mysql.database.azure.com",
-    "dialect": "mysql" ,
-    "port" : "3306" ,
-
-  } 
+ 
 }
